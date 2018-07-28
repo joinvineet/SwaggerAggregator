@@ -1,0 +1,23 @@
+# pointing at Swagger's petstore docs so the example has some content
+server:
+ port: 8090
+ servlet.context-path: /nemo
+documentation:
+  swagger:
+    services:
+      -
+        name: ConfigData-Core-Service
+        url: http://petstore.swagger.io/v2/swagger.json
+        version: 2.0
+      - 
+        name: Questionnaire-Core-Service
+        url: https://vocadb.net:443/swagger/docs/v1
+        version: 1.0
+      -
+        name: ConfigData-Composite-Service
+        url: http://petstore.swagger.io/v2/swagger.json
+        version: 2.0
+      - 
+        name: BC-Composite-Service
+        url: http://petstore.swagger.io/v2/swagger.json
+        version: 2.0
